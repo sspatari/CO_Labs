@@ -97,46 +97,17 @@ class Business:
 
     def caseOne(self):
         self.caseSpecifier = 1
-        self.currentYear = 0
-        self.availableMoney = self.initialMoney
-        self.yearProfit = None
-        self.areaDict = {land_type:0 for land_type in Business.__landTypes}
-        self.profitPerSqKm_dict["forest"] = Business.__forestRevenuePerSqKm - \
-            Business.__forestLandCost
-        self.profitPerSqKm_dict["potatoes"] = Business.__amountPotatoesPerSqKm * \
-            Business.__pricePerTonPotatoes - (Business.__nonForestLandCost + \
-            Business.__costPotatoesSeeds + Business.__costTractor)
-        self.profitPerSqKm_dict["grape"] = Business.__amountGrapePerSqKm * \
-            Business.__winePerTonOfGrape * Business.__priceLitreWine - \
-            (Business.__nonForestLandCost + Business.__costGrapeSeed + \
-            Business.__costWorkers)
-        self.costsBeforeSale_dict["potatoes"] = Business.__costPotatoesSeeds + \
-            Business.__costTractor
-        self.costsBeforeSale_dict["grape"] = Business.__costGrapeSeed + \
-            Business.__costWorkers
-
+        self.valuesInitialisation()
+        
     def caseTwo(self):
         self.caseSpecifier = 2
-        self.currentYear = 0
-        self.availableMoney = self.initialMoney
-        self.yearProfit = None
-        self.areaDict = {land_type:0 for land_type in Business.__landTypes}
-        self.profitPerSqKm_dict["forest"] = Business.__forestRevenuePerSqKm - \
-            Business.__forestLandCost
-        self.profitPerSqKm_dict["potatoes"] = Business.__amountPotatoesPerSqKm * \
-            Business.__pricePerTonPotatoes - (Business.__nonForestLandCost + \
-            Business.__costPotatoesSeeds + Business.__costTractor)
-        self.profitPerSqKm_dict["grape"] = Business.__amountGrapePerSqKm * \
-            Business.__winePerTonOfGrape * Business.__priceLitreWine - \
-            (Business.__nonForestLandCost + Business.__costGrapeSeed + \
-            Business.__costWorkers)
-        self.costsBeforeSale_dict["potatoes"] = Business.__costPotatoesSeeds + \
-            Business.__costTractor
-        self.costsBeforeSale_dict["grape"] = Business.__costGrapeSeed + \
-            Business.__costWorkers
+        self.valuesInitialisation()
 
     def caseThree(self):
         self.caseSpecifier = 3
+        self.valuesInitialisation()
+
+    def valuesInitialisation(self):
         self.currentYear = 0
         self.availableMoney = self.initialMoney
         self.yearProfit = None
@@ -154,7 +125,6 @@ class Business:
             Business.__costTractor
         self.costsBeforeSale_dict["grape"] = Business.__costGrapeSeed + \
             Business.__costWorkers
-
 
 if __name__ == '__main__':
     my_business = Business(1500)
