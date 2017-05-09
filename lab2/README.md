@@ -1,5 +1,5 @@
-#Laboratory Work 1
-##Problem Description
+# Laboratory Work 1
+## Problem Description
 
 You suddenly hear the awesome news that your grand-grand-uncle's cousin, that left to Nigeria a long time ago, has left you with quite a piece of land in the wonderful Telenești area near Budăi (total area is about 1,2 sq. km). You, a huge fan of linear programming, have built this map in order to see things more clearly.
 
@@ -28,7 +28,7 @@ Considering that you’re a fan of linear programming, how do you go about organ
 
 Using your result, develop a simulation that will show your income over time. Use per-year estimations to develop your method. How will this method change if you consider that you won’t have to put the grapes in again each year? How will this change considering that you will pay the grape collectors 2 times less, but give them 100 liters of wine instead?
 
-##Solution
+## Solution
 
 In order to solve the problem it was devided into 3 modules:
 - Simplex module - that was responsible for the calculation. More about the simplex that i used can be found [here](http://www.zweigmedia.com/RealWorld/tutorialsf4/framesSimplex2.html).
