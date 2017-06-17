@@ -22,9 +22,9 @@ class MyApp:
 
 
     def createRectElements(self):
-        self.rect1 = self.canvas.create_rectangle(0, 0, 0, 0, fill = "green")
-        self.rect2 = self.canvas.create_rectangle(0, 0, 0, 0, fill = "yellow")
-        self.rect3 = self.canvas.create_rectangle(0, 0, 0, 0, fill = "purple")
+        self.rect1 = self.canvas.create_rectangle(0, 0, 0, 0, fill = "#228b22")
+        self.rect2 = self.canvas.create_rectangle(0, 0, 0, 0, fill = "#b79268")
+        self.rect3 = self.canvas.create_rectangle(0, 0, 0, 0, fill = "#421C52")
 
     def createTextElements(self):
         self.text1 = self.canvas.create_text(10, 10, anchor="nw", text="", font=("Helvetica",15))
